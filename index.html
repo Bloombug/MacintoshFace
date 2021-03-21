@@ -1,0 +1,49 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <title>This is supposed to be a web app in the end!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap" rel="stylesheet"> 
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <script>
+        function playAudio(url) {
+            new Audio(url).play();
+        }
+    </script>
+
+
+    <body>
+        <div id="main_section">
+        <header>
+            <div id="header_macintosh">
+                <img src="imgs/67f92180a4178dae256bd10cf4e3272a.gif" alt="Two Happy Mac icons, from 1987" style="max-width:100%;height:auto;"/>
+
+                <h2>Happy Mac Face</h2>
+                <hr>
+                <p>A simple web app featuring your boy, Happy Mac Face.<br>Click on any of the icons to let a classic Mac sound out!</p>
+            </div>
+        </header>
+
+        <!-- Icon grid with sounds!-->
+
+        <div class="icon_wrapper">
+    
+            <img src="imgs/classic_mac.jpg" onclick="playAudio('sounds/startup_classic.mp3');alert('Hey! You just heard the startup sound of a Mac IIsi!')"/>
+            <img src="imgs/color_mac.webp" onclick="playAudio('sounds/startup_quadra.mp3'); alert('Hey! You just heard the startup sound of a Macintosh Quadra840AV!')"/>
+            <img src="imgs/modern_happy_mac.png" style="width: 150px;height: 170px;margin-top: -7%; margin-left: -8%;" onclick="playAudio('sounds/startup_pussy_macs.mp3');alert('Hey! You just heard the startup sound of an iMac!')"/>
+
+        </div>
+
+        </div>
+
+        <footer id="footer">
+            <p>Made by Bloombug | github.com/Bloombug</p>
+        </footer>
+        
+    </body>
+</html>
